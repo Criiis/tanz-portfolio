@@ -6,12 +6,13 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     default: "Tanjila - Product Designer",
-    template: "%s | chronark.com",
+    template: "%s | Tanjila Namaji - Product Designer",
   },
   description: "A Product Designer Portfolio",
   openGraph: {
     title: "Tanjila Namaji - Product Designer",
-    description: "Hey there, I'm Tanjila Namaji, a Product Designer, passionate about creating meaningful experiences for people.",
+    description:
+      "Hey there, I'm Tanjila Namaji, a Product Designer, passionate about creating meaningful experiences for people.",
     url: "https://tanz-portfolio.vercel.app/",
     siteName: "Tanjila Namaji Portfolio",
     locale: "en-UK",

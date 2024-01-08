@@ -1,12 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
-
-const navigation = [
-  { name: "About", href: "/about", external: false },
-  { name: "Projects", href: "/projects", external: false },
-  { name: "Contact", href: "https://www.linkedin.com/in/tanjilanamaji/", external: true },
-];
+import { navigation } from "@/content/variables";
 
 export default function Home() {
   return (
@@ -17,7 +12,7 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-base duration-500 text-white font-display tracking-wider hover:text-zinc-500 "
+              className="text-base duration-500 font-display tracking-wider hover:text-zinc-500 "
               target={item.external ? "_blank" : undefined}
             >
               {item.name}
