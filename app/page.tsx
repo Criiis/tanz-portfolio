@@ -31,7 +31,7 @@ export default function Home() {
         Tanjila Namaji
       </h1>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <p className="z-10 font-display text-zinc-400 mt-4 tracking-wider text-3xl animate-fade-in">
+      <p className="z-10 font-display text-zinc-400 mt-4 tracking-wider animate-fade-in sm:text-2xl md:text-3xl">
         Product Designer from London
       </p>
     </div>
