@@ -13,14 +13,7 @@ export const metadata: Metadata = {
     title: "Tanjila Namaji",
     description: "A Product Designer Portfolio",
     url: "https://tanz-portfolio.vercel.app/",
-    siteName: "Tan",
-    images: [
-      {
-        url: "https://chronark.com/og.png",
-        width: 1920,
-        height: 1080,
-      },
-    ],
+    siteName: "Tanjila Namaji Product Designer",
     locale: "en-UK",
     type: "website",
   },
