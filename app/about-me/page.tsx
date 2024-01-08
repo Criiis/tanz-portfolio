@@ -8,10 +8,10 @@ export default function Example() {
   return (
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
-      <div className="container min-h-screen pt-[5rem] mx-auto ">
-        <div className="w-full text-center max-w-screen-md mx-auto">
-          <h2 className="text-3xl font-bold font-display">Hey there!</h2>
-          <h2 className="text-xl mb-4">I'm a Product Designer based in London, UK.</h2>
+      <div className="container min-h-screen pt-[65px] mx-auto px-4">
+        <div className="w-full text-center max-w-screen-lg mx-auto">
+          <h2 className="text-8xl font-bold font-display">About.</h2>
+          <h2 className="text-xl mb-4">I'm a Product Designer based in London</h2>
           <p>
             With a solid foundation of over eight years in the industry, I have honed my skills in
             user experience and user interface creation. My technical acumen, coupled with my
@@ -31,7 +31,7 @@ export default function Example() {
         </div>
 
         <div className="w-full pt-[5rem]">
-          <div className="grid grid-rows-5 grid-flow-col gap-4 justify-items-center">
+          <div className="grid grid-rows-4 grid-flow-col gap-4 justify-items-center">
             {brand.map((brand) => (
               <Image
                 src={`/brands/${brand}.png`}

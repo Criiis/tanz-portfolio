@@ -8,7 +8,6 @@ module.exports = {
     extend: {
       padding: {
         "fluid-video": "56.25%",
-        "5rem": "5rem",
       },
       typography: {
         DEFAULT: {
