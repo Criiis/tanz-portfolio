@@ -3,8 +3,9 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
+  { name: "About", href: "/about", external: false },
+  { name: "Projects", href: "/projects", external: false },
+  { name: "Contact", href: "https://www.linkedin.com/in/tanjilanamaji/", external: true },
 ];
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
               key={item.href}
               href={item.href}
               className="text-base duration-500 text-white font-display tracking-wider hover:text-zinc-500 "
+              target={item.external ? "_blank" : undefined}
             >
               {item.name}
             </Link>
