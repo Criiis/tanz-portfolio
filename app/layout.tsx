@@ -5,14 +5,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Tanjila Namaji",
+    default: "Tanjila - Product Designer",
     template: "%s | chronark.com",
   },
   description: "A Product Designer Portfolio",
   openGraph: {
     title: "Tanjila Namaji",
-    description:
-      "A Product Designer Portfolio",
+    description: "A Product Designer Portfolio",
     url: "https://tanz-portfolio.vercel.app/",
     siteName: "Tan",
     images: [
@@ -54,16 +53,13 @@ const calSans = LocalFont({
   variable: "--font-calsans",
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <body
-        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
+        className={`bg-black ${
+          process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        }`}
       >
         {children}
       </body>
