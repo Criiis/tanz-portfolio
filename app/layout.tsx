@@ -6,16 +6,16 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
+    default: "Tanjila Namaji",
     template: "%s | chronark.com",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "A Product Designer Portfolio",
   openGraph: {
-    title: "chronark.com",
+    title: "Tanjila Namaji",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "A Product Designer Portfolio",
+    url: "https://tanz-portfolio.vercel.app/",
+    siteName: "Tan",
     images: [
       {
         url: "https://chronark.com/og.png",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         height: 1080,
       },
     ],
-    locale: "en-US",
+    locale: "en-UK",
     type: "website",
   },
   robots: {
