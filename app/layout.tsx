@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   },
   description: "A Product Designer Portfolio",
   openGraph: {
-    title: "Tanjila Namaji",
-    description: "A Product Designer Portfolio",
+    title: "Tanjila Namaji - Product Designer",
+    description: "Hey there, I'm Tanjila Namaji, a Product Designer, passionate about creating meaningful experiences for people.",
     url: "https://tanz-portfolio.vercel.app/",
-    siteName: "Tanjila Namaji Product Designer",
+    siteName: "Tanjila Namaji Portfolio",
     locale: "en-UK",
     type: "website",
   },
@@ -27,10 +27,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  twitter: {
-    title: "Chronark",
-    card: "summary_large_image",
   },
   icons: {
     shortcut: "/favicon.png",
