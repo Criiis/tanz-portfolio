@@ -4,7 +4,7 @@ import { Navigation } from "../components/nav";
 import Particles from "../components/particles";
 import Image from "next/image";
 
-export default function Example() {
+export default function Page() {
   return (
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />

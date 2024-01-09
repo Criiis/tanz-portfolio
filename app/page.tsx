@@ -56,7 +56,7 @@ export default function Home() {
               <Card key={company}>
                 <Link
                   href={`/`}
-                  className={`group/edit justify-end grayscale bg-cover bg-no-repeat bg-center p-4 pb-9 relative flex flex-col items-center gap-4 duration-500 min-h-72 group md:gap-8 hover:grayscale-0`}
+                  className={`group/edit w-full justify-end grayscale bg-cover bg-no-repeat bg-center p-4 pb-9 relative flex flex-col items-center gap-4 duration-500 min-h-72 group md:gap-8 hover:grayscale-0`}
                   style={{ backgroundImage: `url('/projects/${image}')` }}
                 >
                   <div>

@@ -30,6 +30,7 @@ export const Navigation: React.FC = () => {
           <div className="flex justify-between gap-8">
             {nav.map(({ name, href, external }) => (
               <Link
+                key={href}
                 href={href}
                 target={external ? "_blank" : undefined}
                 className="duration-200 text-zinc-400 hover:text-zinc-100"
