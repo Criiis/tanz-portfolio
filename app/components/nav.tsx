@@ -1,5 +1,5 @@
 "use client";
-import { navigation } from "@/content/variables";
+import { navigation } from "@/public/variables";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

@@ -1,5 +1,5 @@
 "use client";
-import { brand } from "@/content/variables";
+import { brand } from "@/public/variables";
 import { Navigation } from "../components/nav";
 import Particles from "../components/particles";
 import Image from "next/image";
