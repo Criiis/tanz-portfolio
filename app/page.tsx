@@ -41,7 +41,7 @@ export default function Home() {
           Tanjila Namaji
         </h1>
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-        <p className="z-10 font-display text-zinc-400 mt-4 tracking-wider animate-fade-in sm:text-2xl md:text-3xl">
+        <p className="z-10 font-display text-zinc-400 tracking-wider animate-fade-in mt-0 sm:text-2xl md:text-3xl md:mt-4 ">
           Product Designer from London
         </p>
       </div>
@@ -51,13 +51,12 @@ export default function Home() {
         className="from-zinc-900/0 via-zinc-900 to-zinc-900/0 pb-6 animate-fade-in"
       >
         <div className="container flex items-center justify-center px-4 mx-auto">
-          <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3">
+          <div className="grid w-full grid-cols-1 gap-8 mx-auto sm:grid-cols-3">
             {projects.map(({ company, description, image }) => (
               <Card key={company}>
                 <Link
                   href={`/`}
-                  target="_blank"
-                  className={`group/edit  justify-end grayscale bg-cover bg-no-repeat bg-center p-4 pb-9 relative flex flex-col items-center gap-4 duration-500 min-h-72 group md:gap-8 hover:grayscale-0`}
+                  className={`group/edit justify-end grayscale bg-cover bg-no-repeat bg-center p-4 pb-9 relative flex flex-col items-center gap-4 duration-500 min-h-72 group md:gap-8 hover:grayscale-0`}
                   style={{ backgroundImage: `url('/projects/${image}')` }}
                 >
                   <div>
