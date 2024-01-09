@@ -8,10 +8,12 @@ export default function Example() {
   return (
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
-      <div className="container min-h-screen pt-[65px] mx-auto px-4">
+      <div className="container min-h-screen pt-[65px] mx-auto px-4 animate-fade-in-fast">
         <div className="w-full text-center max-w-screen-lg mx-auto">
-          <h2 className="text-8xl font-bold font-display">About.</h2>
-          <h2 className="text-xl mb-4">I'm a Product Designer based in London</h2>
+          <h2 className="text-5xl md:text-8xl font-bold font-display">Tanjila Namaji.</h2>
+          <p className="z-10 font-display text-zinc-400 tracking-wider my-4 sm:text-2xl md:text-3xl">
+            Product Designer from London
+          </p>
           <p>
             With a solid foundation of over eight years in the industry, I have honed my skills in
             user experience and user interface creation. My technical acumen, coupled with my
@@ -21,12 +23,6 @@ export default function Example() {
             My primary objective is to deliver an end product that is centered around the client and
             user's needs. By doing so, I aim to enhance brand awareness, foster brand loyalty, and
             stimulate revenue growth.
-          </p>
-          <p className="mt-2">
-            In terms of collaboration, I actively contribute to both client projects and in-house
-            campaigns throughout the entire system development process. My specialized knowledge
-            spans across various sectors including FinTech, E-commerce, B2B, B2C, Corporate, and
-            Research.
           </p>
         </div>
 

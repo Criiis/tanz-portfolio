@@ -39,8 +39,18 @@ module.exports = {
         title: "title 2s ease-out forwards",
         "fade-left": "fade-left 3s ease-in-out forwards",
         "fade-right": "fade-right 3s ease-in-out forwards",
+        "fade-in-super-fast": "fade-in-0-to-100 0.4s linear forwards",
+        "fade-in-fast": "fade-in-0-to-100 1s linear forwards",
       },
       keyframes: {
+        "fade-in-0-to-100": {
+          "0%": {
+            opacity: "0%",
+          },
+          "100%": {
+            opacity: "100%",
+          },
+        },
         "fade-in": {
           "0%": {
             opacity: "0%",
