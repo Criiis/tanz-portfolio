@@ -28,7 +28,8 @@ export default function Page({ params }: { params: { id: string } }) {
         <div className="container min-h-screen pt-6 mx-auto px-4 animate-fade-in-fast">
           <div className="container mx-auto">
             <ColContent content1={content1} content2={content1} />
-            <ColContent content1={content1} url="/projects/new-look.png" />
+            <img src="/projects/new-look.png" className="w-full py-10" />
+            <ColContent content1={content1} url="/projects/new-look.png" direction="reverse" />
             My Post: {params.id}
           </div>
         </div>
