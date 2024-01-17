@@ -39,14 +39,14 @@ export const Navigation: React.FC = () => {
                 key={href}
                 href={href}
                 target={external ? "_blank" : undefined}
-                className="duration-200 text-zinc-400 hover:text-zinc-100"
+                className="duration-200 text-white hover:text-zinc-300"
               >
                 {name}
               </Link>
             ))}
           </div>
 
-          <Link href={backNav} className="duration-200 text-zinc-300 hover:text-zinc-100">
+          <Link href={backNav} className="duration-200 text-white hover:text-zinc-300">
             <ArrowLeft className="w-6 h-6 " />
           </Link>
         </div>
