@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { Navigation } from "@/app/components/nav";
 import Hero from "@/app/components/projects-components/hero";
+import ColContent from "@/app/components/projects-components/col-content";
 
 export default function Page({ params }: { params: { id: string } }) {
   const [showNavigation, setShowNavigation] = useState(false);
@@ -24,14 +25,25 @@ export default function Page({ params }: { params: { id: string } }) {
       <Hero />
       <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
         {showNavigation && <Navigation />}
-        <div className="container min-h-screen pt-[80px] mx-auto px-4 animate-fade-in-fast">
-          <div className="container flex items-center justify-center px-4 mx-auto">
-            <div className="grid w-full grid-cols-1 gap-8 mx-auto sm:grid-cols-3">
-              My Post: {params.id}
-            </div>
+        <div className="container min-h-screen pt-6 mx-auto px-4 animate-fade-in-fast">
+          <div className="container mx-auto">
+            <ColContent content1={content1} content2={content1} />
+            <ColContent content1={content1} url="/projects/new-look.png" />
+            My Post: {params.id}
           </div>
         </div>
       </div>
     </>
   );
 }
+
+const content1 = `<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa nihil architecto
+repudiandae sequi? Ea voluptas et repudiandae suscipit. Facere labore sapiente enim nostrum
+nisi et facilis voluptates perferendis sed!
+</p>
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatem quidem, aut
+accusantium delectus sunt maiores adipisci nihil numquam, dignissimos obcaecati dicta
+corrupti pariatur officiis at recusandae magnam corporis nesciunt.
+</p>`;
