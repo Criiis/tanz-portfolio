@@ -5,6 +5,7 @@ import Particles from "./components/particles";
 import { navigation, projects } from "@/public/variables";
 import { Card } from "./components/card";
 import scrollToHash from "@/util/scroll";
+import replaceSpaces from "@/util/replace-spaces";
 
 export default function Home() {
   return (
@@ -55,7 +56,7 @@ export default function Home() {
             {projects.map(({ company, description, image }) => (
               <Card key={company}>
                 <Link
-                  href={`/`}
+                  href={`/projects/${replaceSpaces(company)}`}
                   className={`group/edit w-full justify-end grayscale bg-cover bg-no-repeat bg-center p-4 pb-9 relative flex flex-col items-center gap-4 duration-500 min-h-72 group md:gap-8 hover:grayscale-0`}
                   style={{ backgroundImage: `url('/projects/${image}')` }}
                 >

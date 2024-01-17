@@ -10,6 +10,12 @@ export const Navigation: React.FC = () => {
   const [isIntersecting, setIntersecting] = useState(true);
   const pathname = usePathname();
   const nav = useMemo(() => navigation.filter((item) => item.href !== pathname), [pathname]);
+  const backNav = useMemo(() => {
+    if (pathname?.startsWith("/projects/")) {
+      return "/projects";
+    }
+    return "/";
+  }, [pathname]);
 
   useEffect(() => {
     if (!ref.current) return;
@@ -40,7 +46,7 @@ export const Navigation: React.FC = () => {
             ))}
           </div>
 
-          <Link href="/" className="duration-200 text-zinc-300 hover:text-zinc-100">
+          <Link href={backNav} className="duration-200 text-zinc-300 hover:text-zinc-100">
             <ArrowLeft className="w-6 h-6 " />
           </Link>
         </div>
