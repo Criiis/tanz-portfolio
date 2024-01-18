@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Navigation } from "@/app/components/nav";
 import Hero from "@/app/components/projects-components/hero";
 import ColContent from "@/app/components/projects-components/col-content";
+import Carousel from "@/app/components/projects-components/carousel";
 
 export default function Page({ params }: { params: { id: string } }) {
   const [showNavigation, setShowNavigation] = useState(false);
@@ -30,6 +31,7 @@ export default function Page({ params }: { params: { id: string } }) {
             <ColContent content1={content1} content2={content1} />
             <img src="/projects/new-look.png" className="w-full py-10" />
             <ColContent content1={content1} url="/projects/new-look.png" direction="reverse" />
+            <Carousel />
             My Post: {params.id}
           </div>
         </div>
