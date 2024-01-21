@@ -3,11 +3,9 @@ import { navigation } from "@/public/variables";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useMemo } from "react";
 
 export const Navigation: React.FC = () => {
-  const ref = useRef<HTMLElement>(null);
-  const [isIntersecting, setIntersecting] = useState(true);
   const pathname = usePathname();
   const nav = useMemo(() => navigation.filter((item) => item.href !== pathname), [pathname]);
   const backNav = useMemo(() => {
@@ -17,20 +15,10 @@ export const Navigation: React.FC = () => {
     return "/";
   }, [pathname]);
 
-  useEffect(() => {
-    if (!ref.current) return;
-    const observer = new IntersectionObserver(([entry]) => setIntersecting(entry.isIntersecting));
-
-    observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <header ref={ref}>
+    <header>
       <div
-        className={`fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200 border-b  ${
-          isIntersecting ? "bg-zinc-900/0 border-transparent" : "bg-zinc-900/500  border-zinc-800 "
-        }`}
+        className={`fixed inset-x-0 top-0 z-50 backdrop-blur opacity-0 duration-200 border-transparent animate-fade-in-super-fast`}
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
           <div className="flex justify-between gap-4">

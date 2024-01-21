@@ -8,21 +8,69 @@ import "swiper/css/scrollbar";
 
 export default () => {
   return (
-    <Swiper
-      // install Swiper modules
-      className="py-5"
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={3}
-      navigation
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-    </Swiper>
+    <div className="py-5">
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={50}
+        // on mobile
+        breakpoints={{
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 1200px
+          1200: {
+            slidesPerView: 3,
+          },
+        }}
+        navigation
+      >
+        <SwiperSlide>
+          <div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui voluptates quidem ex
+              illo ut quibusdam sint voluptas porro omnis! Placeat quo itaque excepturi! Veniam
+              quasi rerum inventore nobis consequuntur animi!
+            </p>
+            <img src="/projects/new-look.png" className="w-full py-10" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui voluptates quidem ex
+              illo ut quibusdam sint voluptas porro omnis! Placeat quo itaque excepturi! Veniam
+              quasi rerum inventore nobis consequuntur animi!
+            </p>
+            <img src="/projects/new-look.png" className="w-full py-10" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui voluptates quidem ex
+              illo ut quibusdam sint voluptas porro omnis! Placeat quo itaque excepturi! Veniam
+              quasi rerum inventore nobis consequuntur animi!
+            </p>
+            <img src="/projects/new-look.png" className="w-full py-10" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui voluptates quidem ex
+              illo ut quibusdam sint voluptas porro omnis! Placeat quo itaque excepturi! Veniam
+              quasi rerum inventore nobis consequuntur animi!
+            </p>
+            <img src="/projects/new-look.png" className="w-full py-10" />
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 };
